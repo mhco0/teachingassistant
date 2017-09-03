@@ -25,6 +25,7 @@
     cursor: pointer;
     cursor: hand;
   }
+  
   button:hover {
     background-color: #cfd8dc;
   }
