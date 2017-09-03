@@ -21,6 +21,7 @@ export class AppComponent {
        this.aluno = {nome: "", cpf: "", email: "", githubLogin: ""};
      } else {
        this.aluno.cpf = "";
+       alert("Já existe um aluno com esse CPF");
      }
   }
 }
