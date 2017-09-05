@@ -1,8 +1,10 @@
-<html (mousemove)="onMove()">
+<html>
+
 <h1>
   Teaching Assistant
 </h1>
 
+<<<<<<< HEAD
 <h2>
   Alunos
 </h2>
@@ -47,5 +49,13 @@
    <td><input [(ngModel)]="a.metas.get('gerDeConfiguracao')!" (change)="atualizarAluno(a)"></td>
 </tr>
 </table>
+=======
+<nav>
+    <a routerLink="/alunos">Alunos</a>
+    <a routerLink="/metas">Metas</a>
+</nav>
+
+<router-outlet></router-outlet>
+>>>>>>> 3d64e16... modularizando o componente principal
 
 </html>
