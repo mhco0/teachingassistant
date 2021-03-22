@@ -4,9 +4,9 @@ import { Aluno } from './aluno';
 
 @Injectable()
 export class AlunoService {
-  alunos: Aluno[] = [];
+  alunos!: Aluno[];
 
-  criar(aluno: Aluno): Aluno  | null{
+  criar(aluno: Aluno): Aluno | null {
     aluno = aluno.clone();
     var result = null;
     if (this.cpfNaoCadastrado(aluno.cpf)) {
@@ -17,7 +17,7 @@ export class AlunoService {
   }
 
   cpfNaoCadastrado(cpf: string): boolean {
-     return !this.alunos.find(a => a.cpf == cpf);
+     return !this.alunos.find((a: Aluno) => (a.cpf == cpf));
   }
 
   atualizar(aluno: Aluno): void {

@@ -9,7 +9,6 @@ import { AlunoService } from './aluno.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-
 export class AppComponent {
    constructor(private alunoService: AlunoService) {}
 
